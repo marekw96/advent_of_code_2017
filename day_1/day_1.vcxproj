@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F975AA08-9A9C-40B6-860C-C75BD47ABABA}</ProjectGuid>
+    <ProjectGuid>{1689A382-3CBF-4A1C-8E30-3CB74AA24A8C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>advent_of_code_2017</RootNamespace>
+    <RootNamespace>day_1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
