@@ -249,3 +249,6 @@ ModelManifest.xml
 .vs
 *.filters
 *.user
+*.sln
+*.vcxproj
+
