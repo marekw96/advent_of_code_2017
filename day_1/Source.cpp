@@ -49,7 +49,7 @@ unsigned int calc_captcha_part_two(const std::string& input)
 	unsigned int pos;
 	auto end = std::cend(input);
 	auto item = std::cbegin(input);
-	unsigned int half_size = input.length()/2;
+	auto half_size = input.length()/2;
 	char pair_digit = 0;
 	char digit = 0;
 	unsigned int captcha = 0;

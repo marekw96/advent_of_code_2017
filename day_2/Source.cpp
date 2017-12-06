@@ -5,6 +5,8 @@
 #include <streambuf>
 #include <sstream>
 #include <memory>
+#include <climits>
+#include <algorithm>
 
 std::string read_file(std::string file_name);
 std::vector<std::string> split_by_new_line(const std::string& input);
@@ -75,18 +77,10 @@ unsigned int calc_checksum(const std::vector<std::string>& input)
 int min_max_difference(const std::string & line)
 {
 	auto integers = convert_to_integers(line);
-	int min = 0xffffff;
-	int max = 0;
 
-	for (auto value : integers)
-	{
-		if(value < min)
-			min = value;
-		if(value > max)
-			max = value;
-	}
+	auto min_max = std::minmax_element(std::cbegin(integers), std::cend(integers));
 
-	return max - min;
+	return min_max.second - min_max.first;
 }
 
 std::vector<int> convert_to_integers(const std::string & line)

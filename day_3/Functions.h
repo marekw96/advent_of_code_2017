@@ -19,6 +19,4 @@ namespace aoc
 
 	unsigned int count_valid_passwords_part_two(const std::vector<std::string>& lines);
 	bool is_passphrase_valid_part_two(const std::string& line);
-	bool could_be_rearranged(const std::string& s1, const std::string& s2);
-	int count_letter(const std::string& word, char letter);
 }
