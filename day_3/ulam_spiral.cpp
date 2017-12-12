@@ -67,7 +67,7 @@ std::ostream & operator<<(std::ostream & stream, const ulam_spiral & spiral)
 
 void ulam_spiral::fill()
 {
-	if (collumns > 5)
+	if (collumns > 50)
 	{
 		fill_concurrently();
 		return;
