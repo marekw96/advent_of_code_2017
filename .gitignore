@@ -251,4 +251,5 @@ ModelManifest.xml
 *.user
 *.sln
 *.vcxproj
+catch.hpp
 
