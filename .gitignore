@@ -252,4 +252,5 @@ ModelManifest.xml
 *.sln
 *.vcxproj
 catch.hpp
-
+.swp
+/release
